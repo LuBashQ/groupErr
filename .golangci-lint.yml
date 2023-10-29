@@ -1,0 +1,58 @@
+run:
+  timeout: 5m
+  tests: false
+
+output:
+  format: colored-tab
+
+linters:
+  enable:
+    - decorder
+    - bodyclose
+    - containedctx
+    - contextcheck
+    - dogsled
+    - dupl
+    - errname
+    - exhaustive
+    - exhauststruct
+    - gci
+    - gocheckcompilerdirectives
+    - gochecknoglobals
+    - goconst
+    - gofmt
+    - goimports
+    - gomnd
+    - gosec
+    - gosmopolitan
+    - interfacebloat
+    - mirror
+    - musttag
+    - nestif
+    - nilerr
+    - nilreturn
+    - noctx
+    - nonamedreturns
+    - perfsprint
+    - prealloc
+    - reassign
+    - revive
+    - sloglint
+    - sqlclosecheck
+    - stylecheck
+    - tagalign
+    - tagliatelle
+    - testpackage
+    - tparallel
+    - unparam
+    - usestdlibvars
+    - wastedassign
+    - whitespace
+    - wrapcheck
+    - wsl
+
+linters-settings:
+  decorder:
+    disable-init-func-first-check: false
+    disable-dec-num-check: false
+go: '1.21'
